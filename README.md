@@ -74,7 +74,16 @@ Class Distribution:
 
 ![alt text](images/image.png)
 
+
 This bar chart illustrates the distribution of sentiment classes in the dataset. We observe that the dataset is slightly imbalanced, with more neutral tweets compared to positive and negative tweets.
+
+Test data
+
+[alt text](images/image5.png)
+
+
+This bar chart illustrates the distribution of sentiment classes in the dataset. We observe that the dataset is slightly imbalanced, with more neutral tweets compared to positive and negative tweets.
+
 
 ## Data Preparation
 
