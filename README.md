@@ -90,6 +90,8 @@ The text preprocessing step aims to clean the raw text data to ensure it is in a
 
 - Stopwords removal, eliminating common words (like "the", "is", etc.) that don't carry much semantic value.
 
+- Regular expressions, to remove html tags, elongated words, possessives, mentions, html links and contractions.
+
 - Padding, where we ensure that each sequence (tweet) has the same length by adding zeros to shorter tweets or truncating longer ones. This helps standardize the input for machine learning models.
 
 ### Tokenization and Padding
@@ -100,6 +102,13 @@ Given that tweet lengths can vary significantly, we apply padding to make all se
 
 **Distribution of Sequence Lengths**.
 
-![alt text](images/image2.png)
+For the train data
+
+![alt text](images/image3.png)
 
 The histogram shows the distribution of tweet lengths in terms of the number of tokens. Most tweets in the dataset contain fewer than 10 tokens, with the majority being between 5 and 10 tokens long.
+
+For the test data
+
+[alt text](images/image4.png)
+
