@@ -31,7 +31,52 @@ Due to the growing amount of user-generated content on X, it is becoming more di
 
 Although emojis, acronyms, and slang are common on Twitter, the informal tone of the network makes it difficult to draw meaningful conclusions from user-generated content. While sophisticated NLP models and neural network approaches, handle the complexity of sentiment grouping, preprocessing is essential to cleanse this noisy data.
 
-## Data Understanding
+## Data Undarsatnding
+
+In this section, we delve into the dataset used for sentiment analysis, examining its structure, content, and relevant statistics to better understand the information it contains and how it can be leveraged for model training.
+
+### Dataset Overview
+
+The dataset comprises tweets extracted from the social media platform X (formerly Twitter), labeled with three sentiment categories: positive, negative, and neutral. The objective is to classify these tweets into their respective categories based on the sentiment expressed.
+
+### Data Structure
+The dataset consists of the following columns:
+
+- id: A unique identifier for each tweet.
+
+- text: The content of the tweet, which may contain slang, emojis, and informal language typical of social media interactions.
+
+- label: A numerical representation of the sentiment, where:
+
+    0- represents negative sentiment
+
+    1- represents neutral sentiment
+
+    2- represents positive sentiment
+
+- label_text: A textual representation of the sentiment label (i.e., "positive", "negative", "neutral").
+
+### Summary Statistics
+
+An overview of the dataset reveals key statistics regarding the number of entries and class distribution:
+
+Total number of tweets: 27481
+
+Class Distribution:
+
+    Neutral: 11118
+
+    Negative: 7781
+
+    Positive: 8582
+
+**Class Distribution**
+
+![alt text](images/image.png)
+
+This bar chart illustrates the distribution of sentiment classes in the dataset. We observe that the dataset is slightly imbalanced, with more neutral tweets compared to positive and negative tweets.
+
+## Data Preparation
 
 ### Text Preprocessing
 
@@ -53,15 +98,7 @@ After preprocessing, we convert the cleaned text data into sequences of numerica
 
 Given that tweet lengths can vary significantly, we apply padding to make all sequences uniform.
 
-### Visualizations
-
-1. **Class Distribution**
-
-![alt text](images/image.png)
-
-This bar chart illustrates the distribution of sentiment classes in the dataset. We observe that the dataset is slightly imbalanced, with more neutral tweets compared to positive and negative tweets.
-
-2. **Distribution of Sequence Lengths**
+**Distribution of Sequence Lengths**.
 
 ![alt text](images/image2.png)
 
