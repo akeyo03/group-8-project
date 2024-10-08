@@ -134,11 +134,9 @@ For the test data
 ### CNN Modeling
 #### Model 1
 
-Training accuracy and loss: {'loss': [0.6782533526420593, 0.5720938444137573, 0.4605437219142914, 0.34948763251304626, 0.270579069852829], 'accuracy': [0.7299588918685913, 0.7764273285865784, 0.8307194113731384, 0.8789709210395813, 0.9099013805389404], 'val_loss': [1.461084008216858, 1.755535364151001, 2.0975868701934814, 2.4957058429718018, 3.057917356491089], 'val_accuracy': [0.3590832054615021, 0.3582342863082886, 0.36021506786346436, 0.3590832054615021, 0.36983588337898254]}
+![alt text](images/image-6.png)
 
-![alt text](images/image6.png)
-
-![alt text](images/image7.png)
+![alt text](images/image-7.png)
 
 From the visualizations, it shows that the model is overfitting as the accuracy keeps on increasing as the validation accuracy remains static.
 
@@ -150,9 +148,9 @@ To conclude, we can say that model 1 is not fit to be used to make predictions o
 #### Model 2
 
 
-![alt text](images/image8.png)
+![alt text](images/image-8.png)
 
-![alt text](images/image9.png)
+![alt text](images/image-9.png)
 
 Decreasing Validation Loss: During the training process, there is a constant decrease in the validation loss. This is encouraging since it shows that the model is becoming more effective with data that hasn't been seen yet.
 
@@ -171,9 +169,9 @@ Model 2 is performing better than model 1 in terms of test accuracy and test los
 
 #### Model 3
 
-![alt text](images/image10.png)
+![alt text](images/image-10.png)
 
-![alt text](images/image11.png)
+![alt text](images/image-11.png)
 
 Growing Validation Loss: Throughout the training process, the validation loss keeps rising. This is a clear sign that overfitting is occurring. The model is not able to generalise to previously unknown data since it is learning the training set too well.
 
