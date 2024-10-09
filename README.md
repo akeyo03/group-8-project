@@ -1,5 +1,12 @@
 # X Sentiment Analysis Using CNN
 
+## Group Members
+1. Martin Murimi
+2. Natalie Akeyo
+3. James Kamau
+4. Kellie Ndaru
+5. Calvin Otieno
+
 ## Introduction
 
 Sentiment analysis is a technique used to determine the emotional tone from remarks or comments that users of certain application either X, facebook, instagram or tiktok about a certain topic.
@@ -40,7 +47,7 @@ Sometimes the computer cannot comprehend the tweets because of their informal st
 ### Conclusion
 More advanced sentiment analysis methods must be developed due to the increasing complexity of social media data. Computers can be efficient and scalable, but they frequently have trouble capturing the subtleties of human emotion and language. Researchers and companies need to invest in cutting-edge algorithms and models that can comprehend the subjectivity, tone, and context of social media posts in order to get beyond these restrictions. Organizations may improve their marketing tactics, make better judgements, and obtain deeper insights into public opinion by developing their sentiment analysis capabilities.
 
-## Data Undarsatnding
+## Data Undersatnding
 
 In this section, we delve into the dataset used for sentiment analysis, examining its structure, content, and relevant statistics to better understand the information it contains and how it can be leveraged for model training.
 
