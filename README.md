@@ -132,64 +132,57 @@ For the test data
 
 
 ### CNN Modeling
-#### Model 1
+#### Baseline Model
 
 ![alt text](images/image-6.png)
 
+The validation loss and the training loss are decreasing overtime showing that the model is improving.
+
 ![alt text](images/image-7.png)
 
-From the visualizations, it shows that the model is overfitting as the accuracy keeps on increasing as the validation accuracy remains static.
+The validation accuracy and the training accuracy are both increasing overtime showing that the model is improving in terms of its accuracy on the training data.
 
-Test Loss: 3.0579
-Test Accuracy: 36.98%
+Test Loss: 1.5941
+Test Accuracy: 67.43%
 
-To conclude, we can say that model 1 is not fit to be used to make predictions on the test data. This is because model 1 is overfitting based on the high accuracy on the training data and the low accuracy on the test data. 
+The baseline model is better compared to the second model as it has a higher testing accuracy and a higher training accuracy.
+
 
 #### Model 2
 
+Test Loss: 2.2444
+Test Accuracy: 54.67%
+
+Model 2 had a lower test compared to the baseline model. 
 
 ![alt text](images/image-8.png)
 
+From this visualization, the validation loss is increasing as the training loss is decreasing. With the validation loss increasing, this is an indication that the model is overfitting.
+
 ![alt text](images/image-9.png)
 
-Decreasing Validation Loss: During the training process, there is a constant decrease in the validation loss. This is encouraging since it shows that the model is becoming more effective with data that hasn't been seen yet.
-
-Reducing Training Loss: As would be predicted throughout training, there is a reduction in training loss as well. The model appears to be effectively learning the fundamental patterns in the data and generalizing, based on the trend of both training and validation loss declining.
-
-Growing Validation Accuracy: Throughout the training phase, the validation accuracy keeps rising. This is encouraging since it shows that the model is becoming more effective with data that hasn't been seen yet.
-
-Decreasing Training Accuracy: Following a high, the training accuracy is now declining. This could indicate that the model is beginning to overfit the training set, picking up on its quirks rather than broad patterns.
-
-
-Test Loss: 1.0870
-Test Accuracy: 40.46%
-
-Model 2 is performing better than model 1 in terms of test accuracy and test loss on the test data 
+From this visualization, the training accuracy is increasing while the validation accuracy is decreasing. This is also shows that the model is overfitting on the training data. 
 
 
 #### Model 3
 
 ![alt text](images/image-10.png)
 
+From this visualization, the validation loss and the training loss are decreasing overtime showing that the model is improving.
+
 ![alt text](images/image-11.png)
 
-Growing Validation Loss: Throughout the training process, the validation loss keeps rising. This is a clear sign that overfitting is occurring. The model is not able to generalise to previously unknown data since it is learning the training set too well.
+From this visualization, the validation accuracy and the training accuracy are both increasing overtime showing that the model is improving in terms of its accuracy on the training data.
 
-Reducing Training Loss: During training, it is to be expected that the training loss will decrease. The model may not be becoming better at handling fresh data, though, if the declining trend of the training loss is not matched by a declining validation loss.
+Test Loss: 0.7596
+Test Accuracy: 71.05%
 
-Growing Validation Accuracy: Throughout the training phase, the validation accuracy keeps rising. This is encouraging since it shows that the model is becoming more effective with data that hasn't been seen yet.
+Model 3(third_model) is the best performing model among the three models build.
 
-Decreasing Training Accuracy: Following a high, the training accuracy is now declining. This could indicate that the model is beginning to overfit the training set, picking up on its quirks rather than broad trends.
-
-Test Loss: 1.0977
-Test Accuracy: 40.44%
-
-With comparison with the other 2 models, model 3 is performing better than model in terms of evaluating the test data but slightly poorly than model 2. It although has a higher training accuracy compared to model 2.
+It proves its top perfomance by having a low Test Loss(0.7596) and a high Test Accuracy(71.05%) overall.
 
 #### Conclusion
-
-In conclusion, our model was able to classify positive tweets from negatives and vice versa. This shows that our model given an input text can be able to classify positive and negative tweets.
-
+After picking our final model model3, the model was tested on new unseen data and it was able to classify positive tweets as positive, negative tweets as negative and neutral tweets as neutral.
 
 
 
